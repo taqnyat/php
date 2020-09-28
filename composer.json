@@ -1,0 +1,29 @@
+{
+    "name": "taqnyat/php",
+    "type": "library",
+    "description": "With our REST, easy, and smart “SMS” APIs we allow you to integrate SMS at your app and get started in seconds , With Taqnyat, building a solution with SMS capabilities never been easer , a few lines of code will enable the sms to create a magnificent apps fit with your business needs.",
+    "keywords": ["taqnyat","taqnyat.sa","sms", "api", "php"],
+    "homepage": "https://portal.taqnyat.sa/",
+    "minimum-stability":"dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taqnyat",
+            "email": "dev@taqnyat.sa"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git://github.com/taqnyat/php/blob/master/TaqnyatSms.php"
+        }
+    ]
+    ,
+    "autoload": {
+        "files": ["TaqnyatSms.php"]
+    }
+
+}
