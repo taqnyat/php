@@ -1,7 +1,7 @@
 {
     "name": "taqnyat/php",
     "type": "library",
-    "description": "With our REST, easy, and smart “SMS” APIs we allow you to integrate SMS at your app and get started in seconds , With Taqnyat, building a solution with SMS capabilities never been easer , a few lines of code will enable the sms to create a magnificent apps fit with your business needs.",
+    "description": "A PHP wrapper for Taqnyat's API",
     "keywords": ["taqnyat","taqnyat.sa","sms", "api", "php"],
     "homepage": "https://portal.taqnyat.sa/",
     "minimum-stability":"dev",
