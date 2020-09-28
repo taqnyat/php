@@ -96,4 +96,4 @@ If you need help installing or using the library, please send us email to [Taqny
 If you've instead found a bug in the library or would like new features added, go ahead and send us email , we are welcoming to any suggestion any time
 
 [apidocs]: http://taqnyat.sa/documentation
-[libdocs]: https://github.com/taqnyat/php/README.md
+[libdocs]: https://github.com/taqnyat/php/blob/master/README.md
