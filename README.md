@@ -1,0 +1,99 @@
+# Taqnyat PHP
+
+[![Packagist](https://img.shields.io/badge/packagist-v1.0.0-blue)](https://packagist.org/packages/taqnyat/php)
+[![Packagist](https://img.shields.io/badge/Download-12.4KB-Green)](https://packagist.org/packages/taqnyat/php)
+
+
+## Documentation
+
+The documentation for Taqnyat API can be found [here][apidocs].
+
+The PHP library documentation can be found [here][libdocs].
+
+## Versions
+
+`Taqnyat` this is a beta version of Taqnyat to support the PHP technology , and we will continue adding more features to support the php community.
+### Supported PHP Versions
+
+Taqnyat library supports PHP 7.0+.
+
+## Installation
+
+You can install **Taqnyat-php** via composer or by downloading the source.
+
+### Via Composer:
+
+**Taqnyat-php** is available on Packagist as the
+[`taqnyat/php`](https://packagist.org/packages/taqnyat/php) package:
+
+```
+composer require taqnyat/php
+```
+
+## Quickstart
+
+### Get the account balance and status
+
+```php
+<?php
+$bearer = '**************************0adc2b';
+$taqnyt = new TaqnyatSms($bearer);
+
+
+$balance = $taqnyt->balance();
+print $balance;
+```
+
+### Get the account balance and status
+
+```php
+<?php
+$bearer = '**************************0adc2b';
+$taqnyt = new TaqnyatSms($bearer);
+
+
+$senders = $taqnyt->senders();
+print $senders;
+```
+
+### Send an SMS
+
+```php
+// Sending a SMS using Taqnyat API and PHP is easy as the following:
+<?php
+$bearer = '**************************0adc2b';
+$taqnyt = new TaqnyatSms($bearer);
+
+$body = 'message Content';
+$recipients = ['966********'];
+$sender = 'Sender Name';
+
+$message =$taqnyt->sendMsg($body, $recipients, $sender,$scheduled='');
+print $message;
+```
+
+### Send a schedule SMS
+
+```php
+// Sending a SMS using Taqnyat API and PHP is easy as the following:
+<?php
+$bearer = '**************************0adc2b';
+$taqnyt = new TaqnyatSms($bearer);
+
+$body = 'message Content';
+$recipients = ['966********'];
+$sender = 'Sender Name';
+$schedule = 'xx/xx/xxxx xx:xx:xx';
+
+$message =$taqnyt->sendMsg($body, $recipients, $sender,$schedule);
+print $message;
+```
+
+## Getting help
+
+If you need help installing or using the library, please send us email to [Taqnyat Team](mailto:dev@taqnyat.sa) .
+
+If you've instead found a bug in the library or would like new features added, go ahead and send us email , we are welcoming to any suggestion any time
+
+[apidocs]: http://taqnyat.sa/documentation
+[libdocs]: https://github.com/taqnyat/php/README.md
