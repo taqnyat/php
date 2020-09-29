@@ -239,11 +239,10 @@ class TaqnyatSms {
      * @param string $method Send method
      * @return string $this->error If any error found
      */
-    public function sendMsg($body, $recipients, $sender,$scheduled='',$method=NULL) {
+    public function sendMsg($body, $recipients=array(), $sender,$scheduled='',$method=NULL) {
         $this->checkUserInfo();
         $this->getSendMethod($method);
         if(empty($this->error)) {
-            $recipients = explode(',',$recipients);
             $data = array(
 		        'recipients'=>$recipients,
                 'sender'=>$sender,
@@ -252,6 +251,7 @@ class TaqnyatSms {
             );
             $this->json =  $data;
             $this->json = json_encode($this->json);
+			
             return $this->run($this->base,'/v1/messages',$this->json);
         }
         return $this->error;
@@ -286,6 +286,16 @@ class TaqnyatSms {
         if(empty($this->error)) {
             $this->json=json_encode($this->json);
             return $this->run($this->base,'/account/balance',$this->json,"GET");
+        }
+        return $this->error;
+    }
+	
+	 public function senders($method=NULL) {
+        $this->checkUserInfo();
+        $this->getSendMethod($method);
+        if(empty($this->error)) {
+            $this->json=json_encode($this->json);
+            return $this->run($this->base,'/v1/messages/senders',$this->json,"GET");
         }
         return $this->error;
     }
