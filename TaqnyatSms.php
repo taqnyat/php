@@ -290,7 +290,15 @@ class TaqnyatSms {
         return $this->error;
     }
 	
-	 public function senders($method=NULL) {
+	/**
+     * Get senders of taqnyat account
+     *
+     * @param string $method Send method
+     * @return string $this->error If any error found
+     * @return string $this->result If there is no error
+     **/
+	
+	public function senders($method=NULL) {
         $this->checkUserInfo();
         $this->getSendMethod($method);
         if(empty($this->error)) {
