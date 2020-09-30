@@ -3,7 +3,7 @@
     "type": "library",
     "description": "A PHP wrapper for Taqnyat's API",
     "keywords": ["taqnyat","taqnyat.sa","sms", "api", "php"],
-    "homepage": "https://portal.taqnyat.sa/",
+    "homepage": "https://taqnyat.sa/",
     "minimum-stability":"dev",
     "license": "MIT",
     "authors": [
