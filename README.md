@@ -32,6 +32,15 @@ composer require taqnyat/php
 
 ## Quickstart
 
+### Get Services status
+
+```php
+<?php
+
+$status = $taqnyt->sendStatus();
+print $status;
+```
+
 ### Get the account balance and status
 
 ```php
@@ -44,7 +53,7 @@ $balance = $taqnyt->balance();
 print $balance;
 ```
 
-### Get the account balance and status
+### Get the account senders
 
 ```php
 <?php
