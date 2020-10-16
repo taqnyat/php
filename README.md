@@ -92,7 +92,7 @@ $taqnyt = new TaqnyatSms($bearer);
 $body = 'message Content';
 $recipients = ['966********'];
 $sender = 'Sender Name';
-$schedule = 'xx/xx/xxxx xx:xx:xx';
+$schedule = '2020-09-30T14:26';
 
 $message =$taqnyt->sendMsg($body, $recipients, $sender,$schedule);
 print $message;
