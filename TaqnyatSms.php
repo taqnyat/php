@@ -247,7 +247,7 @@ class TaqnyatSms {
 		        'recipients'=>$recipients,
                 'sender'=>$sender,
                 'body'=>$body,
-                'scheduled'=>$scheduled,
+                'scheduledDatetime'=>$scheduled,
             );
             $this->json =  $data;
             $this->json = json_encode($this->json);
