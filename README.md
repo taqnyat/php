@@ -77,7 +77,7 @@ $body = 'message Content';
 $recipients = ['966********'];
 $sender = 'Sender Name';
 
-$message =$taqnyt->sendMsg($body, $recipients, $sender,$deleteId='' ,$scheduled='');
+$message =$taqnyt->sendMsg($body, $recipients, $sender);
 print $message;
 ```
 
