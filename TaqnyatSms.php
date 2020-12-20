@@ -239,15 +239,16 @@ class TaqnyatSms {
      * @param string $method Send method
      * @return string $this->error If any error found
      */
-    public function sendMsg($body, $recipients=array(), $sender,$scheduled='',$method=NULL) {
+    public function sendMsg($body, $recipients=array(), $sender,$scheduled='',$deleteId='',$method=NULL) {
         $this->checkUserInfo();
         $this->getSendMethod($method);
         if(empty($this->error)) {
             $data = array(
 		        'recipients'=>$recipients,
-                'sender'=>$sender,
-                'body'=>$body,
-                'scheduledDatetime'=>$scheduled,
+                	'sender'=>$sender,
+                	'body'=>$body,
+                	'scheduledDatetime'=>$scheduled,
+		    	'deleteId'=>$deleteId,
             );
             $this->json =  $data;
             $this->json = json_encode($this->json);
