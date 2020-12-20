@@ -76,7 +76,6 @@ $taqnyt = new TaqnyatSms($bearer);
 $body = 'message Content';
 $recipients = ['966********'];
 $sender = 'Sender Name';
-$deleteId = ;
 
 $message =$taqnyt->sendMsg($body, $recipients, $sender,$deleteId='' ,$scheduled='');
 print $message;
