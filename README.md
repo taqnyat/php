@@ -76,8 +76,9 @@ $taqnyt = new TaqnyatSms($bearer);
 $body = 'message Content';
 $recipients = ['966********'];
 $sender = 'Sender Name';
+$smsId = '25489';
 
-$message =$taqnyt->sendMsg($body, $recipients, $sender);
+$message =$taqnyt->sendMsg($body, $recipients, $sender, $smsId);
 print $message;
 ```
 
@@ -92,10 +93,11 @@ $taqnyt = new TaqnyatSms($bearer);
 $body = 'message Content';
 $recipients = ['966********'];
 $sender = 'Sender Name';
+$smsId = '';
 $schedule = '2020-09-30T14:26';
 $deleteId = 100;
 
-$message =$taqnyt->sendMsg($body, $recipients, $sender,$deleteId='',$scheduled='');
+$message = $taqnyt->sendMsg($body, $recipients, $sender, $smsId, $scheduled, $deleteId);
 print $message;
 ```
 
