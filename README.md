@@ -1,6 +1,6 @@
 # Taqnyat PHP
 
-[![Packagist](https://img.shields.io/badge/packagist-v1.0.0-blue)](https://packagist.org/packages/taqnyat/php)
+[![Packagist](https://img.shields.io/badge/packagist-v1.0.1-blue)](https://packagist.org/packages/taqnyat/php)
 [![Packagist](https://img.shields.io/badge/Download-12.4KB-Green)](https://packagist.org/packages/taqnyat/php)
 
 
