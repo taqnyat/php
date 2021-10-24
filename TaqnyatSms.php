@@ -239,7 +239,7 @@ class TaqnyatSms {
      * @param string $method Send method
      * @return string $this->error If any error found
      */
-    public function sendMsg($body, $recipients=array(), $sender,$smsId='',$scheduled='',$deleteId='',$method=NULL) {
+    public function sendMsg($body, $recipients, $sender,$smsId='',$scheduled='',$deleteId='',$method=NULL) {
         $this->checkUserInfo();
         $this->getSendMethod($method);
         if(empty($this->error)) {
